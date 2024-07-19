@@ -1,23 +1,18 @@
-#!/bin/bash
-
-# Danh sách các tác giả hợp lệ
 AUTHORS=(
   'myapp:myapp@gmail.com'
 )
 
-# Lấy tên và email của tác giả hiện tại từ cấu hình git
-#AUTHOR_CONFIG="$GIT_AUTHOR_NAME:$GIT_AUTHOR_EMAIL"
+# AUTHOR_CONFIG="$GIT_AUTHOR_NAME:$GIT_AUTHOR_EMAIL"
 
-# Kiểm tra xem tác giả hiện tại có trong danh sách các tác giả hợp lệ không
-#if [[ ! " ${AUTHORS[*]} " =~ " ${AUTHOR_CONFIG} " ]]; then
-#  echo ⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫
-#  echo "Your name should be the same as your username."
-#  echo "Example: myapp <myapp@gmail.com>"
-#  echo
-#  echo "Fix your username by using:"
-#  echo "git config user.name myapp"
-#  echo "git config user.email myapp@gmail.com"
-#  echo "Then try committing again"
-#  echo ⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫
-#  exit 1
-#fi
+# if [[ ! " ${AUTHORS[*]} " =~ " ${AUTHOR_CONFIG} " ]]; then
+#   echo ⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫
+#   echo "Your name should be the same as your username."
+#   echo "Example: myapp <myapp@gmail.com>"
+#   echo
+#   echo "Fix your username by using:"
+#   echo "git config user.name myapp"
+#   echo "git config user.email myapp@gmail.com"
+#   echo "Then try commiting again"
+#   echo ⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫⛔️🚫
+#   exit 1
+# fi
