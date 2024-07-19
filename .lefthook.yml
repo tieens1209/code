@@ -1,0 +1,18 @@
+commit-msg:
+  scripts:
+    'verify-commit-msg':
+      runner: bash
+      run: ./PHP3/.lefthook/commit-msg/verify-commit-msg
+
+pre-commit:
+  piped: true
+  commands:
+    frontend-prettier:
+      root: 'resources/app/'
+      glob: '*.{ts,tsx,js,jsx}'
+      run: npx prettier {staged_files} --check
+  
+  scripts:
+    'verify-author':
+      runner: bash
+      run: ./PHP3/.lefthook/pre-commit/verify-author
